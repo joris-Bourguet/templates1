@@ -21,6 +21,7 @@
 						<ul>
 							<li><a href="#intro">Bienvenue</a></li>
 							<li><a href="#two">Que faisons nous</a></li>
+							<li><a href="#one">Tarifs</a></li>
 							<li><a href="#three">Nous contacter</a></li>
 						</ul>
 					</nav>
@@ -50,7 +51,7 @@
 							<div class="features">
 								<section>
 									<span class="icon major fa-code "></span>
-									<h3>Tarifs</h3>
+									<h3></h3>
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 								</section>
 								<section>
@@ -83,6 +84,43 @@
 								<li><a href="generic.html" class="button">Learn more</a></li>
 							</ul>
 						</div>
+					</section>
+
+					<section id="one" class="wrapper style2 spotlights">
+							<div class="inner">
+									<h2>Tarifs</h2>
+									<p>Vous pouvez caluculer le tarif suivant vôtre demande.</p>
+										<section>
+											<form method="post" action="tarif.js">
+												<div class="fields">
+													<div class="field half">
+														<label for="adulte">Adulte</label>
+														<input type="text" name="adulte" id="adulte" value="0" required />
+													</div>
+													<div class="field half">
+														<label for="enfant1">Enfants (- 12ans)</label>
+														<input type="text" name="enfant1" id="enfant1" value="0" required />
+													</div>
+													<div class="field half">
+															<label for="enfant2">Enfants (entre 12 et 16ans)</label>
+															<input type="text" name="enfant2" id="enfant2" value="0"required />
+													</div>
+													<div class="field half">
+															<label for="enfant3">Enfants (entre 16 et 18ans)</label>
+															<input type="text" name="enfant3" id="enfant3" value="0" required />
+													</div>
+													<div class="field">
+															<label for="Prix">Totale</label>
+															<input type="text" name="Prix" id="Prix" value="0"/>
+													</div>
+												</div>
+												<ul class="actions">
+													<li><a href="" class="button submit">Calucluer</a></li>
+													<li><a href="#one" class="button reset">Calucluer</a></li>
+												</ul>
+											</form>
+										</section>
+							</div>
 					</section>
 
 				<!-- Three -->
@@ -142,7 +180,6 @@
 							</div>
 						</div>
 					</section>
-
 			</div>
 
 		<!-- Footer -->
