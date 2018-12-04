@@ -9,8 +9,10 @@
 		<title>Maison de la culture</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="tarif.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -91,7 +93,7 @@
 									<h2>Tarifs</h2>
 									<p>Vous pouvez caluculer le tarif suivant vôtre demande.</p>
 										<section>
-											<form method="post" action="tarif.js">
+											<form method="post" name="formcalcul" id="formcalcul">
 												<div class="fields">
 													<div class="field half">
 														<label for="adulte">Adulte</label>
@@ -109,15 +111,10 @@
 															<label for="enfant3">Enfants (entre 16 et 18ans)</label>
 															<input type="text" name="enfant3" id="enfant3" value="0" required />
 													</div>
-													<div class="field">
-															<label for="Prix">Totale</label>
-															<input type="text" name="Prix" id="Prix" value="0"/>
-													</div>
+													<div class="field half" name="Prix" id="Prix"></div>
 												</div>
-												<ul class="actions">
-													<li><a href="" class="button submit">Calucluer</a></li>
-													<li><a href="#one" class="button reset">Calucluer</a></li>
-												</ul>
+											<button class="button" type="button" onClick="calcul(formcalcul)">Calculer</button>
+											<button class="button" type="reset" value="remettre à 0">Remettre à 0</button>
 											</form>
 										</section>
 							</div>
@@ -199,6 +196,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>
