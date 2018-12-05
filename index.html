@@ -12,7 +12,6 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="tarif.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -83,7 +82,7 @@
 								</section>
 							</div>
 							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
+								<li><a href="" class="button">Learn more</a></li>
 							</ul>
 						</div>
 					</section>
@@ -92,28 +91,28 @@
 							<div class="inner">
 									<h2>Tarifs</h2>
 									<p>Vous pouvez calculer le tarif suivant vôtre demande. <br/>
-										Réductions disponible : <br/>Enfants de -12ans = <span class="badge badge-secondary">-30%</span> |
-															Enfants de 12 à 16ans = <span class="badge badge-secondary">-20%</span> |
-															Enfants de 16 à 18ans = <span class="badge badge-secondary">-10%</span>
+										Réductions disponible : <br/>Enfants de -12ans <span class="badge badge-light">-30%</span> |
+															Enfants de 12 à 16ans <span class="badge badge-light">-20%</span> |
+															Enfants de 16 à 18ans <span class="badge badge-light">-10%</span>
 									</p>
 										<section>
 											<form method="post" name="formcalcul" id="formcalcul">
 												<div class="fields">
 													<div class="field half">
 														<label for="adulte">Adulte</label>
-														<input type="text" name="adulte" id="adulte" value="0" required />
+														<input type="text" name="adulte" id="adulte" value="0" oninput="calcul(formcalcul)" required />
 													</div>
 													<div class="field half">
 														<label for="enfant1">Enfants de - 12ans</label>
-														<input type="text" name="enfant1" id="enfant1" value="0" required />
+														<input type="text" name="enfant1" id="enfant1" value="0" oninput="calcul(formcalcul)" required />
 													</div>
 													<div class="field half">
 															<label for="enfant2">Enfants entre 12 et 16ans </label>
-															<input type="text" name="enfant2" id="enfant2" value="0"required />
+															<input type="text" name="enfant2" id="enfant2" value="0" oninput="calcul(formcalcul)" required />
 													</div>
 													<div class="field half">
 															<label for="enfant3">Enfants entre 16 et 18ans</label>
-															<input type="text" name="enfant3" id="enfant3" value="0" required />
+															<input type="text" name="enfant3" id="enfant3" value="0" oninput="calcul(formcalcul)" required />
 													</div>
 													<div class="field half" name="Prix" id="Prix"></div>
 												</div>
@@ -187,7 +186,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; MDC. Droits réservés.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
@@ -203,5 +202,6 @@
 			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+			<script src="tarif.js"></script>
 	</body>
 </html>
