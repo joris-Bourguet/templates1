@@ -17,12 +17,10 @@ function calcul(tarif)
 
 var map;
 function initmap(){
-    window.alert('bonjour');
 
     var ales = {
         lat : 44.6425208,
         lng :  6.4133631
-       
     }
     map = new google.maps.Map(document.getElementById('map'), {
         center : ales,
