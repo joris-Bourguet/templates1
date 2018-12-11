@@ -15,19 +15,15 @@ function calcul(tarif)
 
 // google map 
 
-var map;
-function initmap(){
+function myMap() {
+    var mapProp= {
+        center : new google.maps.LatLng(45.5069261,6.6746882),
+        zoom : 12
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-    var ales = {
-        lat : 44.6425208,
-        lng :  6.4133631
-    }
-    map = new google.maps.Map(document.getElementById('map'), {
-        center : ales,
-        zoom : 7
-    });
     var marker = new google.maps.Marker({
-        position : ales,
-        map: map
+        position : plagne,
+        map : map
     })
 }
