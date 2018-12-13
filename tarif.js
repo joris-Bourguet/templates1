@@ -27,3 +27,7 @@ function myMap() {
         map : map
     })
 }
+
+function valider_formulaire(){
+    window.alert('validation');
+}

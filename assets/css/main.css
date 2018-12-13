@@ -2307,6 +2307,7 @@ input, select, textarea {
 	input[type="password"],
 	input[type="email"],
 	input[type="tel"],
+	input[type="date"],
 	select,
 	textarea {
 		-moz-appearance: none;
