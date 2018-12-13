@@ -21,10 +21,10 @@
 					<h2>MDC</h2>
 					<nav>
 						<ul>
-							<li><a href="#intro">Bienvenue</a></li>
-							<li><a href="#two">Que faisons nous</a></li>
-							<li><a href="#one">Tarifs</a></li>
-							<li><a href="#three">Nous contacter</a></li>
+							<li><a href="index.html#intro">Bienvenue</a></li>
+							<li><a href="index.html#two">Que faisons nous</a></li>
+							<li><a href="index.html#one">Tarifs <br/>(Inscription / Calendrier)</a></li>
+							<li><a href="index.html#three">Nous contacter</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -40,7 +40,7 @@
                         <p>Vous pouvez vous inscrire via le formulaire ci-dessous ou bien, via les réseaux sociaux.</p>
                         <div class="style1">
                             <section>
-                                <form method="post" action="#" id="formulaire_inscription">
+                                <form method="post" action="#" id="myForm">
                                     <div class="container">
                                     <hr/>
                                         <div class="row">
@@ -64,7 +64,7 @@
                                                 <input type="text" name="lieu_naissance">
                                             </div>
                                             <div class="col-md-2">
-                                                <label for="Sexe">Sexe(M/F)</label>
+                                                <label for="Sexe">Sexe (M/F)</label>
                                                 <input type="text" name="Sexe" id="Sexe" />
                                             </div>
                                         </div>
@@ -94,8 +94,8 @@
                                         <div class="row">
                                             <div class="col-md-5">
                                                 <label for="niveau">Avez-vous déjà skié ?</label> 
-                                                <input type="checkbox" name="niveau" value="oui" id="niv_oui"><label for="oui">Oui</label>
-                                                <input type="checkbox" name="niveau" value="non" id="niv_non"><label for="non">Non</label>                                           
+                                                <input type="checkbox" name="niveau" value="oui" id="niv_oui"><label for="niv_oui">Oui</label>
+                                                <input type="checkbox" name="niveau" value="non" id="niv_non"><label for="niv_non">Non</label>                                           
                                             </div>
                                             <div class="col-md-7">
                                                 <label for="medaille">Entrez la dernière médaille obtenue</label>
@@ -117,11 +117,34 @@
                                                 </datalist>
                                             </div>
                                         </div>
-                                        <hr/>
-                                        <input type="submit" value="valider" onclick="valider_formulaire()">
                                     </div>
+                                    <br/>
+                                    <input type="submit" value="valider" />
                                 </form>
                             </section>
+                        <br/>
+                        <hr/>
+                            <section id="Calendrier">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="calendrier" alt="">
+                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-offset-1 col-md-1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="date" name="debut_res" id="debut_res"><label for="debut_res">Début de la réservation</label>
+                                    </div>
+                                    <div class="col-md-offset-2 col-md-2"></div>
+                                    <div class="col-md-4">
+                                            <input type="date" name="fin_res" id="fin_res"><label for="fin_res">Fin de la réservation</label>
+                                    </div>
+                                    <div class="col-md-offset-1 col-md-1"></div>
+                                </div>
+                            </section>
+                        <hr/>
                         </div>
                     </div>
 				</section>
