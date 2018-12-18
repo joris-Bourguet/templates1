@@ -40,7 +40,7 @@
                         <p>Vous pouvez vous inscrire via le formulaire ci-dessous ou bien, via les réseaux sociaux.</p>
                         <div class="style1">
                             <section>
-                                <form method="post" action="#" id="myForm">
+                                <form method="post" action="" id="myForm">
                                     <div class="container">
                                     <hr/>
                                         <div class="row">
@@ -126,23 +126,31 @@
                         <hr/>
                             <section id="Calendrier">
                                 <div class="row">
-                                    <div class="col-md-12">
-                                        <img src="calendrier" alt="">
+                                    <div class="col-md-12 align-center zoom">
+                                        <p>
+                                            <label for="calendrier"> Passez votre souris sur l'image pour zoomer</label>
+                                            <img id="calendrier" src="images/calendrier.jpg" alt="">
+                                        </p>
                                         
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-offset-1 col-md-1">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input type="date" name="debut_res" id="debut_res"><label for="debut_res">Début de la réservation</label>
-                                    </div>
-                                    <div class="col-md-offset-2 col-md-2"></div>
-                                    <div class="col-md-4">
-                                            <input type="date" name="fin_res" id="fin_res"><label for="fin_res">Fin de la réservation</label>
-                                    </div>
-                                    <div class="col-md-offset-1 col-md-1"></div>
-                                </div>
+                                <br/>
+                                    <form method="POST" action="">
+                                        <div class="row">
+                                            <div class="col-md-offset-1 col-md-1"></div>
+                                            <div class="col-md-4">
+                                                <label for="debut_res">Début de la réservation</label><input type="date" name="debut_res" id="debut_res">
+                                            </div>
+                                            <div class="col-md-offset-2 col-md-2"></div>
+                                            <div class="col-md-4">
+                                                <label for="fin_res">Fin de la réservation</label><input type="date" name="fin_res" id="fin_res">
+                                            </div>
+                                            <div class="col-md-offset-1 col-md-1"></div>
+                                        </div>
+                                        <br/>
+                                        <input type="submit" value="Valider la réservation" >
+                                    </form>
+                                <br/>
                             </section>
                         <hr/>
                         </div>
