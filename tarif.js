@@ -44,3 +44,24 @@ function hoveractivite2(txtInfo)
 {
     window.document.getElementById('description').innerHTML = txtInfo;
 }
+
+function hoveractivitejdl(txtInfo)
+{
+    window.document.getElementById('description').innerHTML = txtInfo;
+}
+
+function hovermichel(txtInfo)
+{
+    window.document.getElementById('description').innerHTML = txtInfo;
+}
+
+function hoverjannine(txtInfo)
+{
+    window.document.getElementById('description').innerHTML = txtInfo;
+}
+
+function hoverCompet(txtInfo)
+{
+    window.document.getElementById('description').innerHTML = txtInfo;
+}
+

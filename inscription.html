@@ -131,17 +131,23 @@
 
                                             <map name="image-map">
                                                 <area target="_self" alt="activité 2" title="activité 2" href="" coords="205,74,647,141" shape="rect" 
-                                                onMouseOver="hoveractivite2('Le boitier contient les composants internes.');" onMouseOut="hoveractivite2('')">
+                                                onMouseOver="hoveractivite2('Activité 2 avec tout le mounde');" onMouseOut="hoveractivite2('')">
 
-                                                <area target="" alt="jour de l'an" title="jour de l'an" href="" coords="25,73,200,142" shape="rect">
-                                                <area target="" alt="cours de ski avec michel" title="cours de ski avec michel" href="" coords="25,144,556,214" shape="rect">
-                                                <area target="" alt="cours de ski avec jannine" title="cours de ski avec jannine" href="" coords="26,219,557,286" shape="rect">
-                                                <area target="" alt="compétition ski alpin" title="compétition ski alpin" href="" coords="26,291,557,360" shape="rect">
-                                            </map>   
+                                                <area target="" alt="jour de l'an" title="jour de l'an" href="" coords="25,73,200,142" shape="rect"
+                                                onMouseOver="hoveractivitejdl('jour de l\'an à la salle commune');" onMouseOut="hoveractivitejdl('')">
+
+                                                <area target="" alt="cours de ski avec michel" title="cours de ski avec michel" href="" coords="25,144,556,214" shape="rect"
+                                                onMouseOver="hovermichel('Descente des pistes avec michel');" onMouseOut="hovermichel('')">
+                                                
+                                                <area target="" alt="cours de ski avec jannine" title="cours de ski avec jannine" href="" coords="26,219,557,286" shape="rect"
+                                                onMouseOver="hoverjannine('Descente des pistes avec jannine');" onMouseOut="hoverjannine('')">
+
+                                                <area target="" alt="compétition ski alpin" title="compétition ski alpin" href="" coords="26,291,557,360" shape="rect"
+                                                onMouseOver="hoverCompet('Competition ski alpin');" onMouseOut="hoverCompet('')">
+                                            </map> 
+                                            <p>Choix des activité : <div id="description"></div></p>  
                                         </div>                                            
                                     </div>
-                                    <p>Informations sur l’ordinateur</p>
-                                    <div id="description"></div>
                                 <br/>
                                     <form method="POST" action="">
                                         <div class="row">
