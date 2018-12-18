@@ -25,7 +25,7 @@ function myMap() {
     var marker = new google.maps.Marker({
         position : plagne,
         map : map
-    })
+    });
 }
   
 
@@ -39,3 +39,8 @@ function myMap() {
     
     });
 */
+
+function hoveractivite2(txtInfo)
+{
+    window.document.getElementById('description').innerHTML = txtInfo;
+}

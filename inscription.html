@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
@@ -125,15 +125,23 @@
                         <br/>
                         <hr/>
                             <section id="Calendrier">
-                                <div class="row">
-                                    <div class="col-md-12 align-center zoom">
-                                        <p>
-                                            <label for="calendrier"> Passez votre souris sur l'image pour zoomer</label>
-                                            <img id="calendrier" src="images/calendrier.jpg" alt="">
-                                        </p>
-                                        
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <img src="images/calendrier2.png" usemap="#image-map">
+
+                                            <map name="image-map">
+                                                <area target="_self" alt="activité 2" title="activité 2" href="" coords="205,74,647,141" shape="rect" 
+                                                onMouseOver="hoveractivite2('Le boitier contient les composants internes.');" onMouseOut="hoveractivite2('')">
+
+                                                <area target="" alt="jour de l'an" title="jour de l'an" href="" coords="25,73,200,142" shape="rect">
+                                                <area target="" alt="cours de ski avec michel" title="cours de ski avec michel" href="" coords="25,144,556,214" shape="rect">
+                                                <area target="" alt="cours de ski avec jannine" title="cours de ski avec jannine" href="" coords="26,219,557,286" shape="rect">
+                                                <area target="" alt="compétition ski alpin" title="compétition ski alpin" href="" coords="26,291,557,360" shape="rect">
+                                            </map>   
+                                        </div>                                            
                                     </div>
-                                </div>
+                                    <p>Informations sur l’ordinateur</p>
+                                    <div id="description"></div>
                                 <br/>
                                     <form method="POST" action="">
                                         <div class="row">
@@ -176,6 +184,6 @@
 			<script src="assets/js/main.js"></script>
 			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-            <scrpit src="tarif.js"></scrpit>
+            <script src="tarif.js"></script>
     </body>
 </html>
