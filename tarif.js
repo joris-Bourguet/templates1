@@ -40,28 +40,18 @@ function myMap() {
     });
 */
 
-function hoveractivite2(txtInfo)
+function hover(txtInfo)
 {
     window.document.getElementById('description').innerHTML = txtInfo;
 }
 
-function hoveractivitejdl(txtInfo)
-{
-    window.document.getElementById('description').innerHTML = txtInfo;
+var liens = document.querySelectorAll('a#valider');
+for (var i = 0; i < liens.length; i++){
+    var lien = liens[i]
+    lien.addEventListener('click', function(event){
+        var reponse = window.confirm('Vous allez être rediriger')
+        if (reponse === false){
+            event.preventDefault();
+        }
+    })
 }
-
-function hovermichel(txtInfo)
-{
-    window.document.getElementById('description').innerHTML = txtInfo;
-}
-
-function hoverjannine(txtInfo)
-{
-    window.document.getElementById('description').innerHTML = txtInfo;
-}
-
-function hoverCompet(txtInfo)
-{
-    window.document.getElementById('description').innerHTML = txtInfo;
-}
-

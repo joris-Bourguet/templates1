@@ -123,30 +123,39 @@
                                 </form>
                             </section>
                         <br/>
+                        <h2>Calendrier</h2>
+                        <p>Vous pouvez retrouver toutes les activités du mois</p>
                         <hr/>
                             <section id="Calendrier">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <img src="images/calendrier2.png" usemap="#image-map">
+                                    <div class="row split">
+                                        <div class="col-md-6">
+                                            <img src="images/calendrier2.png" usemap="#image-map" class="mapmap">
 
-                                            <map name="image-map">
+                                            <map name="image-map" class="map-image">
                                                 <area target="_self" alt="activité 2" title="activité 2" href="" coords="205,74,647,141" shape="rect" 
-                                                onMouseOver="hoveractivite2('Activité 2 avec tout le mounde');" onMouseOut="hoveractivite2('')">
+                                                onMouseOver="hover('Activité 2 avec tout le mounde');" onMouseOut="hover('')">
 
                                                 <area target="" alt="jour de l'an" title="jour de l'an" href="" coords="25,73,200,142" shape="rect"
-                                                onMouseOver="hoveractivitejdl('jour de l\'an à la salle commune');" onMouseOut="hoveractivitejdl('')">
+                                                onMouseOver="hover('jour de l\'an à la salle commune');" onMouseOut="hover('')">
 
                                                 <area target="" alt="cours de ski avec michel" title="cours de ski avec michel" href="" coords="25,144,556,214" shape="rect"
-                                                onMouseOver="hovermichel('Descente des pistes avec michel');" onMouseOut="hovermichel('')">
+                                                onMouseOver="hover('Descente des pistes avec michel');" onMouseOut="hover('')">
                                                 
                                                 <area target="" alt="cours de ski avec jannine" title="cours de ski avec jannine" href="" coords="26,219,557,286" shape="rect"
-                                                onMouseOver="hoverjannine('Descente des pistes avec jannine');" onMouseOut="hoverjannine('')">
+                                                onMouseOver="hover('Descente des pistes avec jannine');" onMouseOut="hover('')">
 
                                                 <area target="" alt="compétition ski alpin" title="compétition ski alpin" href="" coords="26,291,557,360" shape="rect"
-                                                onMouseOver="hoverCompet('Competition ski alpin');" onMouseOut="hoverCompet('')">
-                                            </map> 
-                                            <p>Choix des activité : <div id="description"></div></p>  
-                                        </div>                                            
+                                                onMouseOver="hover('Competition ski alpin');" onMouseOut="hover('')">
+                                            </map>
+                                            <div id="description"></div>  
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p>Choix des activité : </p>
+                                            <p> Activité du 31/12 au 01/01</p>
+                                            <p> Activité du 02/01 au 05/01</p>
+                                            <p> Activité du 07/01 au 12/01</p>
+                                            <p> Activité du 24/01 au 26/01</p>
+                                        </div>                                         
                                     </div>
                                 <br/>
                                     <form method="POST" action="">
@@ -162,7 +171,7 @@
                                             <div class="col-md-offset-1 col-md-1"></div>
                                         </div>
                                         <br/>
-                                        <input type="submit" value="Valider la réservation" >
+                                        <input type="submit" value="Valider la réservation" id="valider">
                                     </form>
                                 <br/>
                             </section>

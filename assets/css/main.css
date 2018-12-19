@@ -3960,3 +3960,10 @@ body {
 -ms-transform:skew(0deg,10deg); /* IE 9 */
 -webkit-transform:skew(0deg,5deg); /* Safari and Chrome */
 }
+
+.map-image{
+	float: left;
+}
+.mapmap{
+	width: 100%;
+}
