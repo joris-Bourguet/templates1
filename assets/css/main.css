@@ -3964,6 +3964,9 @@ body {
 .map-image{
 	float: left;
 }
-.mapmap{
-	width: 100%;
+
+.map_page{
+	width: 80%;
+	height: 300px;
+	border: 0;
 }

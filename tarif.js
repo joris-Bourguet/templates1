@@ -55,3 +55,27 @@ for (var i = 0; i < liens.length; i++){
         }
     })
 }
+function ValideForm_oui() {
+    if(document.getElementById('btnaccepte_oui').checked === true) {document.getElementById('btmvalide').disabled = false }
+    if(document.getElementById('btnaccepte_oui').checked === false) {document.getElementById('btmvalide').disabled = true }
+}
+
+function ValideForm_non() {
+    if(document.getElementById('btnaccepte_non').checked === true) {document.getElementById('btmvalide').disabled = false }
+    if(document.getElementById('btnaccepte_non').checked === false) {document.getElementById('btmvalide').disabled = true }
+
+}
+function check_oui(){
+    if (document.getElementById("btnaccepte_non").checked === true)
+    {
+        document.getElementById("btnaccepte_oui").checked = false
+    }
+}
+function check_non(){
+    if (document.getElementById("btnaccepte_oui").checked === true)
+    {
+        document.getElementById("btnaccepte_non").checked = false
+    }
+}
+
+   
